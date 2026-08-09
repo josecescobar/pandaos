@@ -151,6 +151,55 @@ function SettingsRoute() {
         </section>
 
         <section className="rounded-[var(--radius-xl)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5">
+          <h3 className="text-sm font-semibold">GitHub & Vercel</h3>
+          <p className="mt-2 text-sm text-[var(--color-muted)]">
+            Source and deploy targets for this workspace.
+          </p>
+          <dl className="mt-4 space-y-3 text-sm">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <dt className="text-[var(--color-muted)]">GitHub</dt>
+              <dd>
+                <a
+                  href="https://github.com/josecescobar/pandaos"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-medium text-[var(--color-primary)] hover:underline"
+                >
+                  josecescobar/pandaos
+                </a>
+              </dd>
+            </div>
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <dt className="text-[var(--color-muted)]">Vercel</dt>
+              <dd className="text-right">
+                <a
+                  href="https://vercel.com/josecapacho-gmailcoms-projects/pandaos-app"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-medium text-[var(--color-primary)] hover:underline"
+                >
+                  pandaos-app project
+                </a>
+              </dd>
+            </div>
+          </dl>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <Button asChild size="sm" variant="secondary">
+              <a
+                href="https://vercel.com/new/clone?repository-url=https://github.com/josecescobar/pandaos"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Import repo → Vercel
+              </a>
+            </Button>
+            <Button asChild size="sm" variant="secondary">
+              <Link to="/integrations">App integrations</Link>
+            </Button>
+          </div>
+        </section>
+
+        <section className="rounded-[var(--radius-xl)] border border-[var(--color-border)] bg-[var(--color-surface)] p-5">
           <h3 className="text-sm font-semibold">Import / export</h3>
           <p className="mt-2 text-sm text-[var(--color-muted)]">
             Download a portable JSON backup of apps, workflows, messages,
