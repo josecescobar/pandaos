@@ -405,4 +405,5 @@ export const defaultConnectedIds = [
   "postgresql",
   "google-calendar",
   "github",
+  "vercel",
 ] as const;
